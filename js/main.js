@@ -2,7 +2,7 @@
   "use strict";
 
   const state = {
-    lang: localStorage.getItem("lang") || (navigator.language || "en").slice(0, 2) === "fr" ? "fr" : "en",
+    lang: localStorage.getItem("lang") || ((navigator.language || "en").slice(0, 2) === "fr" ? "fr" : "en"),
     theme: localStorage.getItem("theme") || "dark",
     filter: "all"
   };
@@ -236,19 +236,16 @@
       navToggle.classList.remove("open");
     }));
 
-    // Active section highlighting + reveal animation
+    // Active nav-link highlighting as sections scroll through view.
     const sections = document.querySelectorAll("section[id]");
     const navAnchors = document.querySelectorAll(".nav-links a");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          if (entry.intersectionRatio > 0.35) {
-            navAnchors.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
-          }
+        if (entry.isIntersecting && entry.intersectionRatio > 0.35) {
+          navAnchors.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
         }
       });
-    }, { threshold: [0.15, 0.35] });
+    }, { threshold: [0.35] });
     sections.forEach(s => observer.observe(s));
 
     // Sticky header shadow on scroll

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Full-stack developer and Computer Science candidate specializing in secure software, AI/ML and identity & access management." />
+<meta name="color-scheme" content="dark light" />
+<title>Mahamane Sani Adamou Mahamane — Portfolio</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="Home">MS<span>A</span></a>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" data-nav="about"></a></li>
+        <li><a href="#experience" data-nav="experience"></a></li>
+        <li><a href="#education" data-nav="education"></a></li>
+        <li><a href="#skills" data-nav="skills"></a></li>
+        <li><a href="#projects" data-nav="projects"></a></li>
+        <li><a href="#certifications" data-nav="certifications"></a></li>
+        <li><a href="#contact" data-nav="contact"></a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="Toggle language">EN</button>
+      <button class="icon-btn theme-btn" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <span id="theme-icon"></span>
+        <span id="theme-toggle-label" class="theme-label"></span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="kicker" id="hero-kicker"></p>
+        <h1 id="hero-name"></h1>
+        <p class="hero-role" id="hero-role"></p>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="badge-row" id="hero-badges"></div>
+        <div class="hero-cta-row">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects"></a>
+          <a href="#contact" class="btn btn-ghost" id="hero-cta-contact"></a>
+        </div>
+        <div class="hero-socials">
+          <a data-link="github" target="_blank" rel="noopener" aria-label="GitHub"><span id="icon-github-hero"></span></a>
+          <a data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><span id="icon-linkedin-hero"></span></a>
+          <a data-link="mail" aria-label="Email"><span id="icon-mail-hero"></span></a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <img src="assets/img/profile.jpg" alt="Mahamane Sani Adamou Mahamane" class="hero-photo" />
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span id="hero-scroll"></span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <p class="kicker" id="about-kicker"></p>
+      <h2 id="about-heading"></h2>
+      <div class="about-grid">
+        <div id="about-text" class="about-text"></div>
+        <div id="about-facts" class="about-facts"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section alt">
+    <div class="container">
+      <p class="kicker" id="experience-kicker"></p>
+      <h2 id="experience-heading"></h2>
+      <div id="experience-list" class="timeline"></div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <p class="kicker" id="education-kicker"></p>
+      <h2 id="education-heading"></h2>
+      <div id="education-list" class="edu-grid"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <p class="kicker" id="skills-kicker"></p>
+      <h2 id="skills-heading"></h2>
+      <div id="skills-list" class="skills-grid"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="kicker" id="projects-kicker"></p>
+      <h2 id="projects-heading"></h2>
+      <div id="project-filters" class="filter-row"></div>
+      <div id="projects-list" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section alt">
+    <div class="container">
+      <p class="kicker" id="certifications-kicker"></p>
+      <h2 id="certifications-heading"></h2>
+      <div id="certifications-list" class="cert-grid"></div>
+      <a href="#" id="credly-link" target="_blank" rel="noopener" class="credly-link"></a>
+    </div>
+  </section>
+
+  <section id="leadership" class="section">
+    <div class="container">
+      <p class="kicker" id="leadership-kicker"></p>
+      <h2 id="leadership-heading"></h2>
+      <p id="leadership-text" class="leadership-text"></p>
+      <div id="languages-list" class="languages-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt contact-section">
+    <div class="container">
+      <p class="kicker" id="contact-kicker"></p>
+      <h2 id="contact-heading"></h2>
+      <p id="contact-text" class="contact-text"></p>
+      <a href="#" data-link="mail" class="btn btn-primary" id="contact-email-btn">
+        <span id="contact-email-cta"></span> — <span id="contact-email-display"></span>
+      </a>
+      <div class="contact-links">
+        <span id="contact-links-label"></span>
+        <div class="contact-icons">
+          <a data-link="github" target="_blank" rel="noopener" aria-label="GitHub"><span id="icon-github-footer"></span></a>
+          <a data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><span id="icon-linkedin-footer"></span></a>
+          <a data-link="credly" target="_blank" rel="noopener" aria-label="Credly"><span id="icon-credly-footer"></span></a>
+          <a data-link="mail" aria-label="Email"><span id="icon-mail-footer"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+    <p><span id="footer-text"></span> © <span id="footer-year"></span></p>
+    <a href="https://github.com/SaniAdamou14/SaniAdamou14.github.io" target="_blank" rel="noopener" id="footer-source"></a>
+  </div>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

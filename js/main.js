@@ -158,14 +158,40 @@
     document.getElementById("certifications-heading").textContent = c.certifications.heading;
     const certWrap = document.getElementById("certifications-list");
     certWrap.innerHTML = "";
-    c.certifications.items.forEach(item => {
-      const node = el("div", "cert-card");
-      node.innerHTML = `<h4>${item.name}</h4><span>${item.date}</span>`;
-      certWrap.appendChild(node);
+    c.certifications.groups.forEach(group => {
+      const groupEl = el("div", "cert-group");
+
+      const header = el("div", "cert-group-header");
+      header.innerHTML = `<h3>${group.platform}</h3><span class="cert-group-summary">${group.summary}</span>`;
+      groupEl.appendChild(header);
+
+      const grid = el("div", "cert-grid");
+      group.items.forEach(item => {
+        const node = el(item.link ? "a" : "div", "cert-card");
+        if (item.link) {
+          node.href = item.link;
+          node.target = "_blank";
+          node.rel = "noopener";
+        }
+        node.innerHTML = `<h4>${item.name}${item.link ? " &#8599;" : ""}</h4><span>${item.date}</span>`;
+        grid.appendChild(node);
+      });
+      groupEl.appendChild(grid);
+
+      if (group.note) {
+        groupEl.appendChild(el("p", "cert-group-note", group.note));
+      }
+
+      if (group.viewAllLink) {
+        const link = el("a", "credly-link", group.viewAllLabel);
+        link.href = group.viewAllLink === "credly" ? PROFILE_LINKS.credly : group.viewAllLink;
+        link.target = "_blank";
+        link.rel = "noopener";
+        groupEl.appendChild(link);
+      }
+
+      certWrap.appendChild(groupEl);
     });
-    const credlyLink = document.getElementById("credly-link");
-    credlyLink.textContent = c.certifications.viewCredly;
-    credlyLink.href = PROFILE_LINKS.credly;
 
     // Leadership
     document.getElementById("leadership-kicker").textContent = c.leadership.kicker;

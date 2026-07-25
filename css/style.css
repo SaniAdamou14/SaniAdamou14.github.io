@@ -438,7 +438,19 @@ p { margin: 0; }
 }
 
 /* Certifications */
-.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.cert-group { margin-bottom: 40px; }
+.cert-group:last-child { margin-bottom: 0; }
+.cert-group-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.cert-group-header h3 { font-size: 17px; }
+.cert-group-summary { font-size: 13px; color: var(--text-faint); font-weight: 600; }
+.cert-group-note { font-size: 12.5px; color: var(--text-faint); margin: 10px 0 0; font-style: italic; }
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 16px; }
 .cert-card {
   padding: 20px;
   border-radius: var(--radius-sm);
@@ -447,7 +459,11 @@ p { margin: 0; }
   display: flex;
   flex-direction: column;
   gap: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--transition), transform var(--transition);
 }
+a.cert-card:hover { border-color: color-mix(in srgb, var(--accent-1) 40%, var(--border)); transform: translateY(-2px); }
 .cert-card h4 { font-size: 14.5px; }
 .cert-card span { font-size: 12.5px; color: var(--text-faint); font-weight: 700; }
 .credly-link {

@@ -57,7 +57,7 @@ const CONTENT = {
         {
           role: "Web Development & Digital Design Trainee",
           org: "Samaria Digital Center",
-          period: "Dec 2024 - Jun 2025 (provisional dates)",
+          period: "Dec 2024 - Jun 2025",
           bullets: [
             "Three-month theoretical and practical training in web development, webmaster practices, graphic design, PHP and MySQL.",
             "Supported two learners through practical PHP/MySQL exercises."
@@ -66,7 +66,7 @@ const CONTENT = {
         {
           role: "Technology Intern",
           org: "ADN",
-          period: "~3 months (dates to be confirmed)",
+          period: "~3 months",
           bullets: []
         }
       ]
@@ -191,15 +191,59 @@ const CONTENT = {
     certifications: {
       heading: "Certifications",
       kicker: "Credentials",
-      viewCredly: "View all badges on Credly",
-      items: [
-        { name: "Cisco Ethical Hacker", date: "Jan 2025" },
-        { name: "Cisco Junior Cybersecurity Analyst Career Path", date: "Dec 2024" },
-        { name: "Cisco Cyber Threat Management", date: "Jan 2025" },
-        { name: "Cisco Network Defense", date: "Jan 2025" },
-        { name: "Cisco Endpoint Security", date: "Jan 2025" },
-        { name: "Cisco Networking Devices and Initial Configuration", date: "Jan 2025" },
-        { name: "Cisco Networking Basics", date: "Dec 2024" }
+      groups: [
+        {
+          platform: "Cisco Networking Academy",
+          summary: "7 credentials - cybersecurity & networking",
+          viewAllLabel: "View all badges on Credly",
+          viewAllLink: "credly",
+          items: [
+            { name: "Cisco Ethical Hacker", date: "Jan 2025" },
+            { name: "Cisco Junior Cybersecurity Analyst Career Path", date: "Dec 2024" },
+            { name: "Cisco Cyber Threat Management", date: "Jan 2025" },
+            { name: "Cisco Network Defense", date: "Jan 2025" },
+            { name: "Cisco Endpoint Security", date: "Jan 2025" },
+            { name: "Cisco Networking Devices and Initial Configuration", date: "Jan 2025" },
+            { name: "Cisco Networking Basics", date: "Dec 2024" }
+          ]
+        },
+        {
+          platform: "Microsoft Learn",
+          summary: "Level 10 - 92 modules - 17 learning paths - 66 hours",
+          viewAllLabel: "View full transcript",
+          viewAllLink: "https://learn.microsoft.com/users/saniadamou-2420/transcript",
+          items: [
+            { name: "Manage identities in Microsoft Entra ID", date: "Feb 2025" },
+            { name: "AZ-204: Implement Azure Functions", date: "Nov 2024" },
+            { name: "AZ-204: Develop solutions that use Blob storage", date: "Nov 2024" },
+            { name: "AZ-204: Create Azure App Service web apps", date: "Nov 2024" },
+            { name: "Explore Microsoft Graph scenarios for ASP.NET Core", date: "Nov 2024" },
+            { name: "Build mobile and desktop apps with .NET MAUI", date: "Nov 2024" },
+            { name: "Build microservices with .NET and ASP.NET Core", date: "Oct 2024" },
+            { name: "Build web apps and services with ASP.NET Core & minimal APIs", date: "Oct 2024" },
+            { name: "Create .NET applications with C#", date: "Oct 2024" }
+          ],
+          note: "+ 8 more foundational C# learning paths (Aug 2024)"
+        },
+        {
+          platform: "freeCodeCamp",
+          summary: "11 certifications - JavaScript, Python, SQL, Machine Learning, C#",
+          viewAllLabel: "View credentials",
+          viewAllLink: null,
+          items: [
+            { name: "Foundational C# with Microsoft", date: "Aug 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/foundational-c-sharp-with-microsoft" },
+            { name: "Machine Learning with Python", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/machine-learning-with-python-v7" },
+            { name: "College Algebra with Python", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/college-algebra-with-python-v8" },
+            { name: "JavaScript Algorithms and Data Structures", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/javascript-algorithms-and-data-structures-v8" },
+            { name: "Front End Development Libraries", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/front-end-development-libraries" },
+            { name: "Data Visualization", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/data-visualization" },
+            { name: "Responsive Web Design", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/responsive-web-design" },
+            { name: "Legacy JavaScript Algorithms and Data Structures", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/javascript-algorithms-and-data-structures" },
+            { name: "Scientific Computing with Python", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/scientific-computing-with-python-v7" },
+            { name: "Data Analysis with Python", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/data-analysis-with-python-v7" },
+            { name: "Relational Database", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/relational-database-v8" }
+          ]
+        }
       ]
     },
     leadership: {
@@ -209,7 +253,7 @@ const CONTENT = {
       languages: [
         { lang: "French", level: "Native" },
         { lang: "Zarma", level: "Native" },
-        { lang: "English", level: "Professional - EF SET 61/100, CEFR C1" },
+        { lang: "English", level: "Professional - EF SET 62/100, CEFR C1" },
         { lang: "Hausa", level: "Basic" }
       ]
     },
@@ -284,7 +328,7 @@ const CONTENT = {
         {
           role: "Stagiaire Développement Web & Design Digital",
           org: "Samaria Digital Center",
-          period: "Déc 2024 - Juin 2025 (dates provisoires)",
+          period: "Déc 2024 - Juin 2025",
           bullets: [
             "Formation théorique et pratique de trois mois en développement web, pratiques de webmaster, design graphique, PHP et MySQL.",
             "A accompagné deux apprenants sur des exercices pratiques PHP/MySQL."
@@ -293,7 +337,7 @@ const CONTENT = {
         {
           role: "Stagiaire Technologie",
           org: "ADN",
-          period: "~3 mois (dates à confirmer)",
+          period: "~3 mois",
           bullets: []
         }
       ]
@@ -418,15 +462,59 @@ const CONTENT = {
     certifications: {
       heading: "Certifications",
       kicker: "Diplômes & badges",
-      viewCredly: "Voir tous les badges sur Credly",
-      items: [
-        { name: "Cisco Ethical Hacker", date: "Jan 2025" },
-        { name: "Cisco Junior Cybersecurity Analyst Career Path", date: "Déc 2024" },
-        { name: "Cisco Cyber Threat Management", date: "Jan 2025" },
-        { name: "Cisco Network Defense", date: "Jan 2025" },
-        { name: "Cisco Endpoint Security", date: "Jan 2025" },
-        { name: "Cisco Networking Devices and Initial Configuration", date: "Jan 2025" },
-        { name: "Cisco Networking Basics", date: "Déc 2024" }
+      groups: [
+        {
+          platform: "Cisco Networking Academy",
+          summary: "7 certifications - cybersécurité & réseaux",
+          viewAllLabel: "Voir tous les badges sur Credly",
+          viewAllLink: "credly",
+          items: [
+            { name: "Cisco Ethical Hacker", date: "Jan 2025" },
+            { name: "Cisco Junior Cybersecurity Analyst Career Path", date: "Déc 2024" },
+            { name: "Cisco Cyber Threat Management", date: "Jan 2025" },
+            { name: "Cisco Network Defense", date: "Jan 2025" },
+            { name: "Cisco Endpoint Security", date: "Jan 2025" },
+            { name: "Cisco Networking Devices and Initial Configuration", date: "Jan 2025" },
+            { name: "Cisco Networking Basics", date: "Déc 2024" }
+          ]
+        },
+        {
+          platform: "Microsoft Learn",
+          summary: "Niveau 10 - 92 modules - 17 parcours d'apprentissage - 66 heures",
+          viewAllLabel: "Voir le transcript complet",
+          viewAllLink: "https://learn.microsoft.com/fr-fr/users/saniadamou-2420/transcript",
+          items: [
+            { name: "Gérer les identités dans Microsoft Entra ID", date: "Fév 2025" },
+            { name: "AZ-204 : Implémenter des fonctions Azure", date: "Nov 2024" },
+            { name: "AZ-204 : Développer des solutions qui utilisent le stockage Blob", date: "Nov 2024" },
+            { name: "AZ-204 : Créer des applications web Azure App Service", date: "Nov 2024" },
+            { name: "Explorer les scénarios Microsoft Graph pour ASP.NET Core", date: "Nov 2024" },
+            { name: "Créer des applications mobiles et de bureau avec .NET MAUI", date: "Nov 2024" },
+            { name: "Créer des microservices avec .NET et ASP.NET Core", date: "Oct 2024" },
+            { name: "Créer des applications et services web avec ASP.NET Core & API minimale", date: "Oct 2024" },
+            { name: "Créer des applications .NET avec C#", date: "Oct 2024" }
+          ],
+          note: "+ 8 autres parcours C# fondamentaux (Août 2024)"
+        },
+        {
+          platform: "freeCodeCamp",
+          summary: "11 certifications - JavaScript, Python, SQL, Machine Learning, C#",
+          viewAllLabel: "Voir les certifications",
+          viewAllLink: null,
+          items: [
+            { name: "Foundational C# with Microsoft", date: "Août 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/foundational-c-sharp-with-microsoft" },
+            { name: "Machine Learning with Python", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/machine-learning-with-python-v7" },
+            { name: "College Algebra with Python", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/college-algebra-with-python-v8" },
+            { name: "JavaScript Algorithms and Data Structures", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/javascript-algorithms-and-data-structures-v8" },
+            { name: "Front End Development Libraries", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/front-end-development-libraries" },
+            { name: "Data Visualization", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/data-visualization" },
+            { name: "Responsive Web Design", date: "Sep 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/responsive-web-design" },
+            { name: "Legacy JavaScript Algorithms and Data Structures", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/javascript-algorithms-and-data-structures" },
+            { name: "Scientific Computing with Python", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/scientific-computing-with-python-v7" },
+            { name: "Data Analysis with Python", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/data-analysis-with-python-v7" },
+            { name: "Relational Database", date: "Oct 2024", link: "https://www.freecodecamp.org/certification/Sani_Adamou/relational-database-v8" }
+          ]
+        }
       ]
     },
     leadership: {

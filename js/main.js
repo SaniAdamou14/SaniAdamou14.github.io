@@ -134,10 +134,19 @@
       .filter(p => state.filter === "all" || p.category === state.filter)
       .forEach(p => {
         const card = el("article", "project-card");
+        const noteIcon = (note) => {
+          const n = note.toLowerCase();
+          if (n.includes("coming") || n.includes("bientôt")) return "&#9203;";
+          if (n.includes("development") || n.includes("développement")) return "&#128295;";
+          return "&#128274;";
+        };
+        const titleHtml = p.link
+          ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title} &#8599;</a>`
+          : p.title;
         card.innerHTML = `
           <div class="project-top">
-            <h3>${p.title}</h3>
-            ${p.note ? `<span class="confidential-tag">${p.note.toLowerCase().includes("coming") || p.note.toLowerCase().includes("bientôt") ? "&#9203;" : "&#128274;"} ${p.note}</span>` : ""}
+            <h3>${titleHtml}</h3>
+            ${p.note ? `<span class="confidential-tag">${noteIcon(p.note)} ${p.note}</span>` : ""}
           </div>
           <p>${p.desc}</p>
           <div class="tag-wrap">${p.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>`;

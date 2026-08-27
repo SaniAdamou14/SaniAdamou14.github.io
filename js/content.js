@@ -3,15 +3,15 @@ const CONTENT = {
   en: {
     meta: {
       title: "Mahamane Sani Adamou Mahamane - Software Developer & CS Candidate",
-      description: "Full-stack developer and Computer Science candidate (3.96/4.00 GPA) specializing in secure software, AI/ML and identity & access management. Seeking a funded 2027 master's degree."
+      description: "Full-stack developer and Computer Science candidate (3.97/4.00 GPA) specializing in secure software, AI/ML and identity & access management. Seeking a funded 2027 master's degree."
     },
     nav: { about: "About", experience: "Experience", education: "Education", skills: "Skills", projects: "Projects", certifications: "Certifications", contact: "Contact" },
     hero: {
       kicker: "Niamey, Niger",
       name: "Mahamane Sani Adamou Mahamane",
-      role: "Full-Stack Developer · B.S. Computer Science Candidate",
+      role: "Junior Full-Stack Software Developer · B.S. Computer Science Candidate",
       tagline: "Building secure, production software - and researching AI, cybersecurity and distributed systems along the way.",
-      badges: ["3.96/4.00 GPA", "Cisco Ethical Hacker", "RAG · RL · ML"],
+      badges: ["3.97/4.00 GPA", "Cisco Ethical Hacker", "RAG · RL · ML"],
       ctaProjects: "View Projects",
       ctaContact: "Get in Touch",
       scroll: "Scroll"
@@ -20,7 +20,7 @@ const CONTENT = {
       heading: "About",
       kicker: "Profile",
       paragraphs: [
-        "Computer Science candidate with a 3.96/4.00 GPA and nearly two years of continuous full-stack development experience. Progressed from Junior Full-Stack Developer Intern to Full-Stack Developer at Gabera Software Solutions SA.",
+        "Computer Science candidate with a 3.97/4.00 GPA and two years of continuous full-stack development experience. Progressed from Full-Stack Developer Intern at Gabera Foundation to Junior Full-Stack Software Developer at Gabera Software Solutions SARL.",
         "Combines production software engineering, cybersecurity training, identity and access management experience, and applied projects in retrieval-augmented generation, reinforcement learning and machine learning.",
         "Currently seeking a fully or substantially funded, research-oriented master's degree beginning in 2027 - in cybersecurity, artificial intelligence, software engineering, data science, or distributed/cloud systems."
       ],
@@ -36,31 +36,30 @@ const CONTENT = {
       kicker: "Career",
       items: [
         {
-          role: "Full-Stack Developer",
-          org: "Gabera Software Solutions SA",
-          period: "Aug 2025 - Present",
+          role: "Junior Full-Stack Software Developer",
+          org: "Gabera Software Solutions SARL",
+          period: "Feb 2026 - Present",
           bullets: [
             "Develop and maintain business applications using C#, .NET, Angular, TypeScript, SQL and Azure-related technologies.",
-            "Participate in architecture decisions and client discussions; mentor software-development interns.",
-            "Contributed to enterprise IAM functionality (Microsoft Entra ID, SSO, claims, roles) and a Hajj passenger-processing platform across API, mobile and desktop."
+            "Contribute to identity and access management using Microsoft Entra ID, SSO, claims and role-based authorization.",
+            "Designed and built an HR and RFID attendance platform covering employee records, leave, payroll, performance and support tickets.",
+            "Delivered API, desktop and mobile components for a live passenger-processing platform with QR-code verification and offline continuity."
           ]
         },
         {
-          role: "Junior Full-Stack Developer Intern",
-          org: "Gabera Software Solutions SA",
-          period: "Aug 2024 - Aug 2025",
+          role: "Full-Stack Developer Intern",
+          org: "Gabera Foundation",
+          period: "Aug 2024 - Jan 2026",
           bullets: [
-            "Designed and independently developed an integrated HR management and RFID attendance platform used in real organizational operations.",
-            "Implemented and tested frontend and backend functionality, corrected defects, and was promoted to a formal developer role after one year."
+            "Developed frontend and backend features, integrated APIs, fixed defects, tested releases and supported deployments."
           ]
         },
         {
-          role: "Web Development & Digital Design Trainee",
+          role: "Volunteer Peer Mentor",
           org: "Samaria Digital Center",
-          period: "Dec 2024 - Jun 2025",
+          period: "Feb 2025 - May 2025",
           bullets: [
-            "Three-month theoretical and practical training in web development, webmaster practices, graphic design, PHP and MySQL.",
-            "Supported two learners through practical PHP/MySQL exercises."
+            "Supported two learners in PHP, MySQL and debugging, helping them approach technical problems more independently."
           ]
         },
         {
@@ -79,7 +78,7 @@ const CONTENT = {
           degree: "Bachelor of Science, Computer Science",
           school: "University of the People - Online, USA",
           period: "Sep 2025 - Expected Jan 2027",
-          detail: "Cumulative GPA 3.96/4.00. English-medium program. Coursework: data structures & algorithms, operating systems, databases, networking, web development, software engineering, cybersecurity, artificial intelligence, discrete mathematics, calculus, statistics."
+          detail: "Cumulative GPA 3.97/4.00. English-medium program. Coursework: data structures & algorithms, operating systems, databases, networking, web development, software engineering, cybersecurity, artificial intelligence, discrete mathematics, calculus, statistics."
         },
         {
           degree: "Scientific Baccalaureate, Series D",
@@ -112,6 +111,13 @@ const CONTENT = {
           tags: ["C#", "ASP.NET Core", "Angular", "JWT", "Argon2id"],
           desc: "A from-scratch authentication API and Angular client: Argon2id password hashing, JWT access tokens with rotating refresh tokens and reuse detection, role-based authorization, account lockout, rate limiting, TOTP multi-factor authentication and a full security audit log. Built to demonstrate real security engineering decisions, not just framework defaults - every choice is documented and defensible.",
           link: "https://github.com/SaniAdamou14/AuthGuard"
+        },
+        {
+          title: "AuthBench",
+          category: "security",
+          tags: ["Python", "Machine Learning", "LANL", "Anomaly Detection"],
+          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1B+ real events across 58 days), comparing seven models - heuristics, classical anomaly detection and deep learning - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally.",
+          link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
           title: "Aegis-ID",
@@ -182,7 +188,7 @@ const CONTENT = {
           category: "ai",
           tags: ["C++", "CMake", "Python", "JavaScript"],
           desc: "An independent computational simulation exploring biological evolution. Currently being restructured, tested and documented for public release.",
-          note: "Coming soon - August 2026 release.",
+          note: "In progress - public release coming soon.",
           link: "https://github.com/SaniAdamou14/Serina"
         }
       ],
@@ -274,15 +280,15 @@ const CONTENT = {
   fr: {
     meta: {
       title: "Mahamane Sani Adamou Mahamane - Développeur Full-Stack & Candidat CS",
-      description: "Développeur full-stack et candidat en informatique (GPA 3.96/4.00), spécialisé en logiciels sécurisés, IA/ML et gestion des identités et accès. À la recherche d'un master financé pour 2027."
+      description: "Développeur full-stack et candidat en informatique (GPA 3.97/4.00), spécialisé en logiciels sécurisés, IA/ML et gestion des identités et accès. À la recherche d'un master financé pour 2027."
     },
     nav: { about: "Profil", experience: "Expérience", education: "Formation", skills: "Compétences", projects: "Projets", certifications: "Certifications", contact: "Contact" },
     hero: {
       kicker: "Niamey, Niger",
       name: "Mahamane Sani Adamou Mahamane",
-      role: "Développeur Full-Stack · Candidat B.S. en Informatique",
+      role: "Développeur Full-Stack Junior · Candidat B.S. en Informatique",
       tagline: "Je construis des logiciels sécurisés et en production - tout en explorant l'IA, la cybersécurité et les systèmes distribués.",
-      badges: ["GPA 3.96/4.00", "Cisco Ethical Hacker", "RAG · RL · ML"],
+      badges: ["GPA 3.97/4.00", "Cisco Ethical Hacker", "RAG · RL · ML"],
       ctaProjects: "Voir les projets",
       ctaContact: "Me contacter",
       scroll: "Défiler"
@@ -291,7 +297,7 @@ const CONTENT = {
       heading: "Profil",
       kicker: "À propos",
       paragraphs: [
-        "Candidat en informatique avec un GPA de 3.96/4.00 et près de deux ans d'expérience continue en développement full-stack. Passé de stagiaire développeur junior à développeur full-stack chez Gabera Software Solutions SA.",
+        "Candidat en informatique avec un GPA de 3.97/4.00 et deux ans d'expérience continue en développement full-stack. Passé de stagiaire développeur full-stack chez Gabera Foundation à développeur full-stack junior chez Gabera Software Solutions SARL.",
         "Combine ingénierie logicielle en production, formation en cybersécurité, expérience en gestion des identités et des accès, et projets appliqués en génération augmentée par récupération (RAG), apprentissage par renforcement et machine learning.",
         "Recherche actuellement un master à orientation recherche, entièrement ou substantiellement financé, débutant en 2027 - en cybersécurité, intelligence artificielle, génie logiciel, science des données ou systèmes distribués/cloud."
       ],
@@ -307,31 +313,30 @@ const CONTENT = {
       kicker: "Parcours",
       items: [
         {
-          role: "Développeur Full-Stack",
-          org: "Gabera Software Solutions SA",
-          period: "Août 2025 - Présent",
+          role: "Développeur Full-Stack Junior",
+          org: "Gabera Software Solutions SARL",
+          period: "Févr 2026 - Présent",
           bullets: [
             "Développe et maintient des applications métier avec C#, .NET, Angular, TypeScript, SQL et technologies Azure.",
-            "Participe aux décisions d'architecture et aux échanges clients ; encadre des stagiaires développeurs.",
-            "A contribué à des fonctionnalités IAM d'entreprise (Microsoft Entra ID, SSO, claims, rôles) et à une plateforme de traitement des passagers du Hajj (API, mobile, desktop)."
+            "Contribue à la gestion des identités et des accès avec Microsoft Entra ID, SSO, claims et autorisation par rôles.",
+            "A conçu et développé une plateforme de gestion RH et de pointage RFID couvrant dossiers employés, congés, paie, performance et tickets de support.",
+            "A livré des composants API, desktop et mobile pour une plateforme de traitement des passagers en direct, avec vérification QR et continuité hors ligne."
           ]
         },
         {
-          role: "Stagiaire Développeur Full-Stack Junior",
-          org: "Gabera Software Solutions SA",
-          period: "Août 2024 - Août 2025",
+          role: "Stagiaire Développeur Full-Stack",
+          org: "Gabera Foundation",
+          period: "Août 2024 - Janv 2026",
           bullets: [
-            "A conçu et développé de façon autonome une plateforme intégrée de gestion RH et de pointage RFID utilisée en conditions réelles.",
-            "A implémenté et testé le frontend et le backend, corrigé des anomalies, et a été promu développeur formel après un an."
+            "Développement de fonctionnalités frontend et backend, intégration d'API, correction d'anomalies, tests de mise en production et support au déploiement."
           ]
         },
         {
-          role: "Stagiaire Développement Web & Design Digital",
+          role: "Mentor bénévole",
           org: "Samaria Digital Center",
-          period: "Déc 2024 - Juin 2025",
+          period: "Fév 2025 - Mai 2025",
           bullets: [
-            "Formation théorique et pratique de trois mois en développement web, pratiques de webmaster, design graphique, PHP et MySQL.",
-            "A accompagné deux apprenants sur des exercices pratiques PHP/MySQL."
+            "A accompagné deux apprenants en PHP, MySQL et débogage, les aidant à aborder les problèmes techniques avec plus d'autonomie."
           ]
         },
         {
@@ -350,7 +355,7 @@ const CONTENT = {
           degree: "Bachelor of Science, Informatique",
           school: "University of the People - En ligne, États-Unis",
           period: "Sep 2025 - Prévu Jan 2027",
-          detail: "GPA cumulatif 3.96/4.00. Programme en anglais. Cours : structures de données et algorithmes, systèmes d'exploitation, bases de données, réseaux, développement web, génie logiciel, cybersécurité, intelligence artificielle, mathématiques discrètes, calcul, statistiques."
+          detail: "GPA cumulatif 3.97/4.00. Programme en anglais. Cours : structures de données et algorithmes, systèmes d'exploitation, bases de données, réseaux, développement web, génie logiciel, cybersécurité, intelligence artificielle, mathématiques discrètes, calcul, statistiques."
         },
         {
           degree: "Baccalauréat Scientifique, Série D",
@@ -383,6 +388,13 @@ const CONTENT = {
           tags: ["C#", "ASP.NET Core", "Angular", "JWT", "Argon2id"],
           desc: "Une API d'authentification et un client Angular conçus de zéro : hachage des mots de passe en Argon2id, tokens JWT avec refresh tokens rotatifs et détection de rejeu, autorisation par rôles, verrouillage de compte, limitation de débit, authentification multifacteur TOTP et un journal d'audit complet. Conçu pour démontrer de vraies décisions d'ingénierie sécurité, pas juste les réglages par défaut d'un framework - chaque choix est documenté et défendable.",
           link: "https://github.com/SaniAdamou14/AuthGuard"
+        },
+        {
+          title: "AuthBench",
+          category: "security",
+          tags: ["Python", "Machine Learning", "LANL", "Détection d'anomalies"],
+          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (plus d'1 milliard d'événements réels sur 58 jours), comparant sept modèles - heuristiques, détection d'anomalies classique et deep learning - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique.",
+          link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
           title: "Aegis-ID",
@@ -453,7 +465,7 @@ const CONTENT = {
           category: "ai",
           tags: ["C++", "CMake", "Python", "JavaScript"],
           desc: "Simulation informatique indépendante explorant l'évolution biologique. Actuellement en cours de restructuration, de tests et de documentation pour une publication publique.",
-          note: "Bientôt disponible - publication août 2026.",
+          note: "En cours de développement - publication à venir.",
           link: "https://github.com/SaniAdamou14/Serina"
         }
       ],
@@ -524,7 +536,7 @@ const CONTENT = {
       languages: [
         { lang: "Français", level: "Natif" },
         { lang: "Zarma", level: "Natif" },
-        { lang: "Anglais", level: "Professionnel - EF SET 61/100, CECR C1" },
+        { lang: "Anglais", level: "Professionnel - EF SET 62/100, CECR C1" },
         { lang: "Haoussa", level: "Basique" }
       ]
     },

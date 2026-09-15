@@ -153,6 +153,28 @@
         projWrap.appendChild(card);
       });
 
+    // Research
+    document.getElementById("research-kicker").textContent = c.research.kicker;
+    document.getElementById("research-heading").textContent = c.research.heading;
+    document.getElementById("research-intro").textContent = c.research.intro;
+    const researchWrap = document.getElementById("research-list");
+    researchWrap.innerHTML = "";
+    c.research.items.forEach(paper => {
+      const card = el("article", "research-card");
+      card.innerHTML = `
+        <div class="research-status">${paper.status}</div>
+        <h3>${paper.title}</h3>
+        <p class="research-subtitle">${paper.subtitle}</p>
+        <div class="research-stats">
+          ${paper.stats.map(s => `<div class="research-stat"><span class="research-stat-value">${s.value}</span><span class="research-stat-label">${s.label}</span></div>`).join("")}
+        </div>
+        <p class="research-desc">${paper.desc}</p>
+        <div class="research-links">
+          ${paper.links.map(l => `<a href="${l.href}" class="btn btn-ghost" target="_blank" rel="noopener">${l.label}</a>`).join("")}
+        </div>`;
+      researchWrap.appendChild(card);
+    });
+
     // Certifications
     document.getElementById("certifications-kicker").textContent = c.certifications.kicker;
     document.getElementById("certifications-heading").textContent = c.certifications.heading;

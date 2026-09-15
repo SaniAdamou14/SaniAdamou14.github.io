@@ -116,7 +116,7 @@ const CONTENT = {
           title: "AuthBench",
           category: "security",
           tags: ["Python", "Machine Learning", "LANL", "Anomaly Detection"],
-          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1B+ real events across 58 days), comparing seven models - heuristics, classical anomaly detection and deep learning - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally.",
+          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1B+ real events across 58 days), comparing seven models - heuristics, statistical and classical anomaly detection - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally. Confirmed on a second, wider three-day test window (52 campaigns).",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
@@ -393,7 +393,7 @@ const CONTENT = {
           title: "AuthBench",
           category: "security",
           tags: ["Python", "Machine Learning", "LANL", "Détection d'anomalies"],
-          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (plus d'1 milliard d'événements réels sur 58 jours), comparant sept modèles - heuristiques, détection d'anomalies classique et deep learning - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique.",
+          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (plus d'1 milliard d'événements réels sur 58 jours), comparant sept modèles - heuristiques, détection d'anomalies statistique et classique - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique. Confirmé sur une seconde fenêtre de test élargie à trois jours (52 campagnes).",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {

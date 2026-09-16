@@ -109,7 +109,7 @@ const CONTENT = {
           title: "AuthGuard",
           category: "security",
           tags: ["C#", "ASP.NET Core", "Angular", "JWT", "Argon2id"],
-          desc: "A from-scratch authentication API and Angular client: Argon2id password hashing, JWT access tokens with rotating refresh tokens and reuse detection, role-based authorization, account lockout, rate limiting, TOTP multi-factor authentication and a full security audit log. Built to demonstrate real security engineering decisions, not just framework defaults - every choice is documented and defensible.",
+          desc: "A from-scratch authentication API and Angular client: Argon2id password hashing with a Have I Been Pwned breach check, JWT access tokens with rotating refresh tokens and reuse detection, role-based authorization with self-service first-admin setup, account lockout, rate limiting, TOTP multi-factor authentication with recovery codes, and a full security audit log. 56 automated tests: 43 unit tests against the service layer, 13 integration tests driving the real API over HTTP. Built to demonstrate real security engineering decisions, not just framework defaults - every choice is documented and defensible.",
           link: "https://github.com/SaniAdamou14/AuthGuard"
         },
         {
@@ -408,7 +408,7 @@ const CONTENT = {
           title: "AuthGuard",
           category: "security",
           tags: ["C#", "ASP.NET Core", "Angular", "JWT", "Argon2id"],
-          desc: "Une API d'authentification et un client Angular conçus de zéro : hachage des mots de passe en Argon2id, tokens JWT avec refresh tokens rotatifs et détection de rejeu, autorisation par rôles, verrouillage de compte, limitation de débit, authentification multifacteur TOTP et un journal d'audit complet. Conçu pour démontrer de vraies décisions d'ingénierie sécurité, pas juste les réglages par défaut d'un framework - chaque choix est documenté et défendable.",
+          desc: "Une API d'authentification et un client Angular conçus de zéro : hachage des mots de passe en Argon2id avec vérification contre les fuites Have I Been Pwned, tokens JWT avec refresh tokens rotatifs et détection de rejeu, autorisation par rôles avec initialisation du premier compte admin en self-service, verrouillage de compte, limitation de débit, authentification multifacteur TOTP avec codes de récupération, et un journal d'audit complet. 56 tests automatisés : 43 tests unitaires sur la couche service, 13 tests d'intégration pilotant l'API réelle en HTTP. Conçu pour démontrer de vraies décisions d'ingénierie sécurité, pas juste les réglages par défaut d'un framework - chaque choix est documenté et défendable.",
           link: "https://github.com/SaniAdamou14/AuthGuard"
         },
         {

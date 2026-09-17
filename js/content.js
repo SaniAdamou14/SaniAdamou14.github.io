@@ -122,9 +122,8 @@ const CONTENT = {
         {
           title: "Aegis-ID",
           category: "security",
-          tags: ["C#", "Microsoft Graph", "Entra ID", "CIS Benchmark"],
-          desc: "A read-only security posture auditor for Microsoft Entra ID tenants - detects identity misconfigurations (privileged accounts without MFA, excessive Global Administrators, high-risk Graph API permissions, legacy authentication), and maps findings to the CIS Microsoft 365 Benchmark and MITRE ATT&CK. Never requests write access, by design.",
-          note: "In active development",
+          tags: ["C#", ".NET", "Angular", "Microsoft Graph", "Entra ID", "CIS Benchmark"],
+          desc: "A read-only security posture auditor for Microsoft Entra ID tenants: 15 identity misconfiguration controls - privileged accounts without strong MFA, excessive Global Administrators, high-risk Graph API permissions, legacy authentication not blocked, expiring application credentials, unrestricted guest invites, and more - each mapped to the CIS Microsoft 365 Benchmark and MITRE ATT&CK. Six-project .NET solution (domain model, controls engine with reflection-based auto-discovery, Microsoft Graph collector, CLI, REST API, Angular dashboard) covered by 94 automated tests, with CI enforcing build, formatting, the full test suite and a gitleaks secret scan on every push. Console, JSON, CSV and white-labeled PDF reports, plus SQLite-backed scan history and scan-to-scan diffing. Requests exactly six read-only Graph permissions and never a write scope, by design.",
           link: "https://github.com/SaniAdamou14/Aegis-ID"
         },
         {
@@ -421,9 +420,8 @@ const CONTENT = {
         {
           title: "Aegis-ID",
           category: "security",
-          tags: ["C#", "Microsoft Graph", "Entra ID", "CIS Benchmark"],
-          desc: "Un auditeur de posture de sécurité en lecture seule pour les tenants Microsoft Entra ID - détecte les mauvaises configurations d'identité (comptes privilégiés sans MFA, trop d'administrateurs globaux, permissions Graph à haut risque, authentification legacy), et rattache les résultats au CIS Microsoft 365 Benchmark et à MITRE ATT&CK. Ne demande jamais d'accès en écriture, par conception.",
-          note: "En développement actif",
+          tags: ["C#", ".NET", "Angular", "Microsoft Graph", "Entra ID", "CIS Benchmark"],
+          desc: "Un auditeur de posture de sécurité en lecture seule pour les tenants Microsoft Entra ID : 15 contrôles de mauvaise configuration d'identité - comptes privilégiés sans MFA forte, trop d'administrateurs globaux, permissions Graph à haut risque, authentification legacy non bloquée, identifiants d'application expirants, invitations d'invités non restreintes, et plus - chacun rattaché au CIS Microsoft 365 Benchmark et à MITRE ATT&CK. Solution .NET en six projets (modèle de domaine, moteur de contrôles à découverte automatique par réflexion, collecteur Microsoft Graph, CLI, API REST, tableau de bord Angular) couverte par 94 tests automatisés, avec une CI qui impose build, formatage, suite de tests complète et scan de secrets gitleaks à chaque push. Rapports console, JSON, CSV et PDF personnalisables en marque blanche, plus un historique de scans SQLite avec comparaison scan-à-scan. Ne demande que six permissions Graph en lecture seule, jamais d'accès en écriture, par conception.",
           link: "https://github.com/SaniAdamou14/Aegis-ID"
         },
         {

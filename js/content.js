@@ -183,11 +183,11 @@ const CONTENT = {
           link: "https://github.com/SaniAdamou14/Gold_Price"
         },
         {
-          title: "Serina - Biological Evolution Simulation",
+          title: "Serina - Evolutionary Ecosystem Simulator",
           category: "ai",
-          tags: ["C++", "CMake", "Python", "JavaScript"],
-          desc: "An independent computational simulation exploring biological evolution. Currently being restructured, tested and documented for public release.",
-          note: "In progress - public release coming soon.",
+          tags: ["C++", "Python", "Node.js", "React", "MySQL"],
+          desc: "An evolutionary ecosystem simulator built around the speculative-evolution premise of Serina: A World Without Humans - a C++20 engine, a Node.js/MySQL API and a React dashboard, wired end-to-end and verified live via Playwright screenshots against a running simulation, not just typechecked. CI runs 8 Catch2 and 21 pytest cases on every push, including a real pybind11 mutation bug the test suite caught on its first run. Documented honestly: a full NEAT/advanced-genetics system exists in the codebase but isn't yet wired into the live loop, so per-species genetic diversity is currently a placeholder, not a measured distance.",
+          note: "Public, actively developed - core pipeline verified end-to-end; advanced genetics not yet connected to the live simulation.",
           link: "https://github.com/SaniAdamou14/Serina"
         }
       ],
@@ -481,11 +481,11 @@ const CONTENT = {
           link: "https://github.com/SaniAdamou14/Gold_Price"
         },
         {
-          title: "Serina - Simulation d'évolution biologique",
+          title: "Serina - Simulateur d'écosystème évolutif",
           category: "ai",
-          tags: ["C++", "CMake", "Python", "JavaScript"],
-          desc: "Simulation informatique indépendante explorant l'évolution biologique. Actuellement en cours de restructuration, de tests et de documentation pour une publication publique.",
-          note: "En cours de développement - publication à venir.",
+          tags: ["C++", "Python", "Node.js", "React", "MySQL"],
+          desc: "Un simulateur d'écosystème évolutif construit autour de la prémisse de spéculation évolutive de Serina : A World Without Humans - un moteur C++20, une API Node.js/MySQL et un tableau de bord React, reliés de bout en bout et vérifiés en direct par des captures Playwright contre une simulation réellement en cours d'exécution, pas seulement typé statiquement. La CI exécute 8 cas Catch2 et 21 cas pytest à chaque push, dont un vrai bug de mutation pybind11 trouvé par la suite de tests dès sa première exécution. Documenté honnêtement : un système complet NEAT/génétique avancée existe dans le code mais n'est pas encore branché à la boucle réelle - la diversité génétique par espèce affichée est donc pour l'instant un espace réservé, pas une distance mesurée.",
+          note: "Public, en développement actif - le pipeline central est vérifié de bout en bout ; la génétique avancée n'est pas encore connectée à la simulation réelle.",
           link: "https://github.com/SaniAdamou14/Serina"
         }
       ],

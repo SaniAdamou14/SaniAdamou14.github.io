@@ -196,12 +196,12 @@ const CONTENT = {
     research: {
       heading: "Research",
       kicker: "Independent Research",
-      intro: "A technical report, written independently and hosted here while it awaits the arXiv endorsement a first-time submitter needs for cs.CR.",
+      intro: "A technical report, written independently and published as a preprint while it awaits the arXiv endorsement a first-time submitter needs for cs.CR.",
       items: [
         {
           title: "Aggregate Ranking Metrics Can Invert Operational Order",
           subtitle: "An Alert-Budget-Constrained Benchmark for Authentication Anomaly Detection",
-          status: "Preprint - arXiv submission pending endorsement (cs.CR)",
+          status: "Preprint - published on Zenodo (DOI), arXiv submission pending endorsement (cs.CR)",
           desc: "A security operations centre can triage a few dozen alerts per analyst per day, yet most published anomaly-detection results are reported at operating points no analyst could ever staff. On real Los Alamos National Laboratory authentication data (39 red-team campaigns), no model detects a single campaign at 10, 50 or 100 alerts per day - and the model with the best ROC-AUC (0.942) detects nothing at any budget, while the only model that detects anything has the lowest ROC-AUC of the five non-trivial models (0.547). Ranking by the literature-comparable metric would place the model that detects nothing first. Confirmed on a second, wider test window (52 campaigns).",
           stats: [
             { label: "Best ROC-AUC", value: "0.942 → 0% detected" },
@@ -209,6 +209,7 @@ const CONTENT = {
             { label: "Real red-team campaigns", value: "39 (+ 52 on a wider window)" }
           ],
           links: [
+            { label: "Preprint (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
             { label: "Read the paper (PDF)", href: "assets/authbench-paper.pdf" },
             { label: "Code & full results", href: "https://github.com/SaniAdamou14/AuthBench" }
           ]
@@ -494,12 +495,12 @@ const CONTENT = {
     research: {
       heading: "Recherche",
       kicker: "Recherche indépendante",
-      intro: "Un rapport technique, rédigé de façon indépendante et hébergé ici en attendant le parrainage (endorsement) qu'arXiv exige d'un premier soumissionnaire pour la catégorie cs.CR.",
+      intro: "Un rapport technique, rédigé de façon indépendante et publié comme preprint en attendant le parrainage (endorsement) qu'arXiv exige d'un premier soumissionnaire pour la catégorie cs.CR.",
       items: [
         {
           title: "Aggregate Ranking Metrics Can Invert Operational Order",
           subtitle: "Un benchmark contraint par un budget d'alertes réaliste, pour la détection d'anomalies d'authentification",
-          status: "Preprint - soumission arXiv en attente de parrainage (cs.CR)",
+          status: "Preprint - publié sur Zenodo (DOI), soumission arXiv en attente de parrainage (cs.CR)",
           desc: "Un centre opérationnel de sécurité (SOC) ne peut trier que quelques dizaines d'alertes par analyste et par jour, alors que la plupart des résultats publiés en détection d'anomalies sont mesurés à des points de fonctionnement qu'aucun analyste ne pourrait jamais tenir. Sur des données réelles d'authentification du Los Alamos National Laboratory (39 campagnes red-team réelles), aucun modèle ne détecte une seule campagne à 10, 50 ou 100 alertes par jour - et le modèle avec le meilleur ROC-AUC (0,942) ne détecte rien à aucun budget, tandis que le seul modèle qui détecte quelque chose a le plus faible ROC-AUC des cinq modèles non triviaux (0,547). Classer selon la métrique comparable à la littérature placerait en tête le modèle qui ne détecte rien. Confirmé sur une seconde fenêtre de test plus large (52 campagnes).",
           stats: [
             { label: "Meilleur ROC-AUC", value: "0,942 → 0% détecté" },
@@ -507,6 +508,7 @@ const CONTENT = {
             { label: "Campagnes red-team réelles", value: "39 (+ 52 sur fenêtre élargie)" }
           ],
           links: [
+            { label: "Preprint (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
             { label: "Lire le papier (PDF)", href: "assets/authbench-paper.pdf" },
             { label: "Code et résultats complets", href: "https://github.com/SaniAdamou14/AuthBench" }
           ]

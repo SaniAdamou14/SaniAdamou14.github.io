@@ -116,7 +116,7 @@ const CONTENT = {
           title: "AuthBench",
           category: "security",
           tags: ["Python", "Machine Learning", "LANL", "Anomaly Detection"],
-          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1B+ real events across 58 days), comparing seven models - heuristics, statistical and classical anomaly detection - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally. Confirmed on a second, wider three-day test window (52 campaigns).",
+          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1.05B events across 58 days; reported run: 14 days, 239M events), comparing seven models - heuristics, statistical and classical anomaly detection - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally. On a second, wider three-day test window (52 campaigns), no model detected any campaign.",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
@@ -202,7 +202,7 @@ const CONTENT = {
           title: "Aggregate Ranking Metrics Can Invert Operational Order",
           subtitle: "An Alert-Budget-Constrained Benchmark for Authentication Anomaly Detection",
           status: "Preprint - published on Zenodo (DOI), arXiv submission pending endorsement (cs.CR)",
-          desc: "A security operations centre can triage a few dozen alerts per analyst per day, yet most published anomaly-detection results are reported at operating points no analyst could ever staff. On real Los Alamos National Laboratory authentication data (39 red-team campaigns), no model detects a single campaign at 10, 50 or 100 alerts per day - and the model with the best ROC-AUC (0.942) detects nothing at any budget, while the only model that detects anything has the lowest ROC-AUC of the five non-trivial models (0.547). Ranking by the literature-comparable metric would place the model that detects nothing first. Confirmed on a second, wider test window (52 campaigns).",
+          desc: "A security operations centre can triage a few dozen alerts per analyst per day, yet most published anomaly-detection results are reported at operating points no analyst could ever staff. On real Los Alamos National Laboratory authentication data (39 red-team campaigns), no model detects a single campaign at 10, 50 or 100 alerts per day - and the model with the best ROC-AUC (0.942) detects nothing at any budget, while the only model that detects anything has the lowest ROC-AUC of the five non-trivial models (0.547). Ranking by the literature-comparable metric would place the model that detects nothing first. On a second, wider test window (52 campaigns), no model detected any campaign.",
           stats: [
             { label: "Best ROC-AUC", value: "0.942 → 0% detected" },
             { label: "Only model that detects anything", value: "ROC-AUC 0.547" },
@@ -277,7 +277,7 @@ const CONTENT = {
     leadership: {
       heading: "Leadership & Languages",
       kicker: "Beyond code",
-      text: "Mentored four software-development interns across different periods and supported two learners through practical PHP/MySQL exercises. Participated in the Next Leadership Club junior leadership program (communication, teamwork, personal development, community engagement).",
+      text: "Technical mentor to four vocational interns in Microsoft Access and relational database logic (Mar-Apr 2026) and volunteer peer mentor to two learners in PHP and MySQL (Samaria Digital Center, Feb-May 2025). Completed the Next Leadership Youth Leadership Class, second cohort (August 2023; communication, teamwork, personal development, community engagement).",
       languages: [
         { lang: "French", level: "Native" },
         { lang: "Zarma", level: "Native" },
@@ -415,7 +415,7 @@ const CONTENT = {
           title: "AuthBench",
           category: "security",
           tags: ["Python", "Machine Learning", "LANL", "Détection d'anomalies"],
-          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (plus d'1 milliard d'événements réels sur 58 jours), comparant sept modèles - heuristiques, détection d'anomalies statistique et classique - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique. Confirmé sur une seconde fenêtre de test élargie à trois jours (52 campagnes).",
+          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (1,05 milliard d'événements sur 58 jours ; exécution rapportée : 14 jours, 239 M d'événements), comparant sept modèles - heuristiques, détection d'anomalies statistique et classique - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique. Sur une seconde fenêtre de test élargie à trois jours (52 campagnes), aucun modèle ne détecte de campagne.",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
@@ -501,7 +501,7 @@ const CONTENT = {
           title: "Aggregate Ranking Metrics Can Invert Operational Order",
           subtitle: "Un benchmark contraint par un budget d'alertes réaliste, pour la détection d'anomalies d'authentification",
           status: "Preprint - publié sur Zenodo (DOI), soumission arXiv en attente de parrainage (cs.CR)",
-          desc: "Un centre opérationnel de sécurité (SOC) ne peut trier que quelques dizaines d'alertes par analyste et par jour, alors que la plupart des résultats publiés en détection d'anomalies sont mesurés à des points de fonctionnement qu'aucun analyste ne pourrait jamais tenir. Sur des données réelles d'authentification du Los Alamos National Laboratory (39 campagnes red-team réelles), aucun modèle ne détecte une seule campagne à 10, 50 ou 100 alertes par jour - et le modèle avec le meilleur ROC-AUC (0,942) ne détecte rien à aucun budget, tandis que le seul modèle qui détecte quelque chose a le plus faible ROC-AUC des cinq modèles non triviaux (0,547). Classer selon la métrique comparable à la littérature placerait en tête le modèle qui ne détecte rien. Confirmé sur une seconde fenêtre de test plus large (52 campagnes).",
+          desc: "Un centre opérationnel de sécurité (SOC) ne peut trier que quelques dizaines d'alertes par analyste et par jour, alors que la plupart des résultats publiés en détection d'anomalies sont mesurés à des points de fonctionnement qu'aucun analyste ne pourrait jamais tenir. Sur des données réelles d'authentification du Los Alamos National Laboratory (39 campagnes red-team réelles), aucun modèle ne détecte une seule campagne à 10, 50 ou 100 alertes par jour - et le modèle avec le meilleur ROC-AUC (0,942) ne détecte rien à aucun budget, tandis que le seul modèle qui détecte quelque chose a le plus faible ROC-AUC des cinq modèles non triviaux (0,547). Classer selon la métrique comparable à la littérature placerait en tête le modèle qui ne détecte rien. Sur une seconde fenêtre de test plus large (52 campagnes), aucun modèle ne détecte de campagne.",
           stats: [
             { label: "Meilleur ROC-AUC", value: "0,942 → 0% détecté" },
             { label: "Seul modèle qui détecte quelque chose", value: "ROC-AUC 0,547" },
@@ -576,7 +576,7 @@ const CONTENT = {
     leadership: {
       heading: "Leadership & Langues",
       kicker: "Au-delà du code",
-      text: "A encadré quatre stagiaires en développement logiciel à différentes périodes et accompagné deux apprenants sur des exercices pratiques PHP/MySQL. A participé au programme junior de leadership du Next Leadership Club (communication, travail d'équipe, développement personnel, engagement communautaire).",
+      text: "Mentor technique de quatre stagiaires en formation professionnelle sur Microsoft Access et la logique des bases de données relationnelles (mars-avr. 2026) et mentor bénévole de deux apprenants en PHP et MySQL (Samaria Digital Center, févr.-mai 2025). A suivi avec succès la Youth Leadership Class de Next Leadership, 2ème cohorte (août 2023 ; communication, travail d'équipe, développement personnel, engagement communautaire).",
       languages: [
         { lang: "Français", level: "Natif" },
         { lang: "Zarma", level: "Natif" },

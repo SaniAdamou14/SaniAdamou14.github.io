@@ -77,7 +77,7 @@ const CONTENT = {
         {
           degree: "Bachelor of Science, Computer Science",
           school: "University of the People - Online, USA",
-          period: "Sep 2025 - Expected Jan 2027",
+          period: "Nov 2025 - Expected Jan 2027",
           detail: "Cumulative GPA 3.97/4.00. English-medium program. Coursework: data structures & algorithms, operating systems, databases, networking, web development, software engineering, cybersecurity, artificial intelligence, discrete mathematics, calculus, statistics."
         },
         {
@@ -376,7 +376,7 @@ const CONTENT = {
         {
           degree: "Bachelor of Science, Informatique",
           school: "University of the People - En ligne, États-Unis",
-          period: "Sep 2025 - Prévu Jan 2027",
+          period: "Nov 2025 - Prévu Jan 2027",
           detail: "GPA cumulatif 3.97/4.00. Programme en anglais. Cours : structures de données et algorithmes, systèmes d'exploitation, bases de données, réseaux, développement web, génie logiciel, cybersécurité, intelligence artificielle, mathématiques discrètes, calcul, statistiques."
         },
         {

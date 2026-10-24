@@ -115,8 +115,8 @@ const CONTENT = {
         {
           title: "AuthBench",
           category: "security",
-          tags: ["Python", "Machine Learning", "LANL", "Anomaly Detection"],
-          desc: "A leak-free, temporally-sound benchmark for authentication-log anomaly detection on the LANL security dataset (1.05B events across 58 days; reported run: 14 days, 239M events), comparing seven models - heuristics, statistical and classical anomaly detection - under realistic SOC alert budgets. Key finding: across 39 real red-team campaigns, none of the seven models detected a single campaign at 10, 50 or 100 alerts/day, and the two evaluation registers ranked models in opposite order - the best model by ROC-AUC (0.942) detected nothing operationally. On a second, wider three-day test window (52 campaigns), no model detected any campaign.",
+          tags: ["Python", "PyTorch", "Machine Learning", "Statistics", "LANL", "Anomaly Detection"],
+          desc: "An open harness that evaluates authentication anomaly detectors the way a SOC consumes them: under daily alert budgets and a temporally leak-free protocol, with every red-team campaign given the budget at which it is first detected and every result set against a random ranking and a label-free baseline. Run on the full LANL dataset (1.05B events over 58 days) under the harmonised protocol of Larroche (2026), whose event set it reproduces exactly (369.6M events, 162 red-team campaigns), with eleven detectors and two baselines, from rules and outlier detectors to autoencoders and a reimplementation of the graph detector Euler. 387 automated tests, and CI regenerates every number of the report from the committed run outputs.",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
@@ -196,21 +196,22 @@ const CONTENT = {
     research: {
       heading: "Research",
       kicker: "Independent Research",
-      intro: "A technical report, written independently and published as a preprint while it awaits the arXiv endorsement a first-time submitter needs for cs.CR.",
+      intro: "An independent technical report, published as a preprint. Version 2 (October 2026) is rewritten on the full LANL run of 22 October 2026; the arXiv submission (cs.CR) awaits the endorsement a first-time submitter needs.",
       items: [
         {
-          title: "Aggregate Ranking Metrics Can Invert Operational Order",
-          subtitle: "An Alert-Budget-Constrained Benchmark for Authentication Anomaly Detection",
-          status: "Preprint - published on Zenodo (DOI), arXiv submission pending endorsement (cs.CR)",
-          desc: "A security operations centre can triage a few dozen alerts per analyst per day, yet most published anomaly-detection results are reported at operating points no analyst could ever staff. On real Los Alamos National Laboratory authentication data (39 red-team campaigns), no model detects a single campaign at 10, 50 or 100 alerts per day - and the model with the best ROC-AUC (0.942) detects nothing at any budget, while the only model that detects anything has the lowest ROC-AUC of the five non-trivial models (0.547). Ranking by the literature-comparable metric would place the model that detects nothing first. On a second, wider test window (52 campaigns), no model detected any campaign.",
+          title: "AuthBench: Temporally Leak-Free, Alert-Budget Evaluation of Authentication Anomaly Detectors",
+          subtitle: "With a LANL Case Study",
+          status: "Preprint, version 2 (October 2026) - version 1 and the code archived on Zenodo (DOI)",
+          desc: "Security operations centres investigate a bounded number of alerts per day, yet anomaly detectors for authentication logs are mostly compared by threshold-free metrics. Under a protocol that reads no label, no detector places an event of any of the 162 red-team campaigns within 10 alerts per day, and the best detects 7 within 500. Ranked by user-day, the graph detector Euler reaches 51.2% of the campaigns at 500 per day - but simply counting how many computers each user touched that day, with no detector at all, reaches 56.8%: the coarser unit measures the fan-out of the compromised accounts. ROC-AUC and AUC-PR do not order the detectors by their campaign budgets; a campaign-weighted average precision does. The report also reruns the Euler authors' own code, which stays close to its published AUC but below half its published average precision with its default configuration, and reconciles both test sets edge by edge; the configuration its authors indicate is the next run. A case study of one intrusion, reported with its limits.",
           stats: [
-            { label: "Best ROC-AUC", value: "0.942 → 0% detected" },
-            { label: "Only model that detects anything", value: "ROC-AUC 0.547" },
-            { label: "Real red-team campaigns", value: "39 (+ 52 on a wider window)" }
+            { label: "Campaigns detected within 10 alerts/day", value: "0 / 162" },
+            { label: "Best detector within 500 events/day", value: "7 / 162" },
+            { label: "User-days at 500/day: activity count vs best detector", value: "56.8% vs 51.2%" }
           ],
           links: [
-            { label: "Preprint (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
-            { label: "Read the paper (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Read version 2 (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Version 1 (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
+            { label: "Code v2.1.0 (DOI)", href: "https://doi.org/10.5281/zenodo.23623196" },
             { label: "Code & full results", href: "https://github.com/SaniAdamou14/AuthBench" }
           ]
         }
@@ -414,8 +415,8 @@ const CONTENT = {
         {
           title: "AuthBench",
           category: "security",
-          tags: ["Python", "Machine Learning", "LANL", "Détection d'anomalies"],
-          desc: "Un benchmark sans fuite de données et temporellement rigoureux pour la détection d'anomalies dans les journaux d'authentification, sur le jeu de données de sécurité LANL (1,05 milliard d'événements sur 58 jours ; exécution rapportée : 14 jours, 239 M d'événements), comparant sept modèles - heuristiques, détection d'anomalies statistique et classique - sous des budgets d'alertes réalistes pour un SOC. Résultat clé : sur 39 campagnes red-team réelles, aucun des sept modèles ne détecte une seule campagne à 10, 50 ou 100 alertes par jour, et les deux registres d'évaluation classent les modèles dans l'ordre inverse - le meilleur modèle au ROC-AUC (0,942) ne détecte rien en pratique. Sur une seconde fenêtre de test élargie à trois jours (52 campagnes), aucun modèle ne détecte de campagne.",
+          tags: ["Python", "PyTorch", "Machine Learning", "Statistiques", "LANL", "Détection d'anomalies"],
+          desc: "Un banc d'évaluation ouvert qui juge les détecteurs d'anomalies d'authentification comme un SOC les utilise : sous un budget d'alertes quotidien et un protocole sans fuite temporelle, en donnant à chaque campagne red-team le budget auquel elle est détectée pour la première fois, et en confrontant chaque résultat à un classement aléatoire et à une référence sans étiquettes. Exécuté sur le jeu de données LANL complet (1,05 milliard d'événements sur 58 jours) selon le protocole harmonisé de Larroche (2026), dont il reproduit exactement l'ensemble d'événements (369,6 M d'événements, 162 campagnes red-team), avec onze détecteurs et deux références, des règles et détecteurs d'anomalies jusqu'aux autoencodeurs et à une réimplémentation du détecteur sur graphe Euler. 387 tests automatisés, et l'intégration continue régénère chaque chiffre du rapport à partir des sorties du run.",
           link: "https://github.com/SaniAdamou14/AuthBench"
         },
         {
@@ -495,21 +496,22 @@ const CONTENT = {
     research: {
       heading: "Recherche",
       kicker: "Recherche indépendante",
-      intro: "Un rapport technique, rédigé de façon indépendante et publié comme preprint en attendant le parrainage (endorsement) qu'arXiv exige d'un premier soumissionnaire pour la catégorie cs.CR.",
+      intro: "Un rapport technique indépendant, publié comme preprint. La version 2 (octobre 2026) est réécrite sur le run LANL complet du 22 octobre 2026 ; la soumission arXiv (cs.CR) attend le parrainage (endorsement) exigé d'un premier soumissionnaire.",
       items: [
         {
-          title: "Aggregate Ranking Metrics Can Invert Operational Order",
-          subtitle: "Un benchmark contraint par un budget d'alertes réaliste, pour la détection d'anomalies d'authentification",
-          status: "Preprint - publié sur Zenodo (DOI), soumission arXiv en attente de parrainage (cs.CR)",
-          desc: "Un centre opérationnel de sécurité (SOC) ne peut trier que quelques dizaines d'alertes par analyste et par jour, alors que la plupart des résultats publiés en détection d'anomalies sont mesurés à des points de fonctionnement qu'aucun analyste ne pourrait jamais tenir. Sur des données réelles d'authentification du Los Alamos National Laboratory (39 campagnes red-team réelles), aucun modèle ne détecte une seule campagne à 10, 50 ou 100 alertes par jour - et le modèle avec le meilleur ROC-AUC (0,942) ne détecte rien à aucun budget, tandis que le seul modèle qui détecte quelque chose a le plus faible ROC-AUC des cinq modèles non triviaux (0,547). Classer selon la métrique comparable à la littérature placerait en tête le modèle qui ne détecte rien. Sur une seconde fenêtre de test plus large (52 campagnes), aucun modèle ne détecte de campagne.",
+          title: "AuthBench: Temporally Leak-Free, Alert-Budget Evaluation of Authentication Anomaly Detectors",
+          subtitle: "Avec une étude de cas sur LANL",
+          status: "Preprint, version 2 (octobre 2026) - la version 1 et le code sont archivés sur Zenodo (DOI)",
+          desc: "Les centres opérationnels de sécurité (SOC) n'examinent qu'un nombre limité d'alertes par jour, alors que les détecteurs d'anomalies d'authentification sont surtout comparés par des métriques sans seuil. Avec un protocole qui ne lit aucune étiquette, aucun détecteur ne place un événement de l'une des 162 campagnes red-team dans les 10 premières alertes d'une journée, et le meilleur en détecte 7 dans les 500. Classé par utilisateur-jour, le détecteur sur graphe Euler atteint 51,2 % des campagnes à 500 par jour - mais compter simplement le nombre de machines touchées par chaque utilisateur ce jour-là, sans aucun détecteur, atteint 56,8 % : l'unité plus grossière mesure l'étendue de l'activité des comptes compromis. Le ROC-AUC et l'AUC-PR ne classent pas les détecteurs selon leurs budgets de détection ; une précision moyenne pondérée par campagne, si. Le rapport relance aussi le code des auteurs d'Euler, qui reste proche de son AUC publiée mais sous la moitié de sa précision moyenne publiée avec sa configuration par défaut, et réconcilie les deux jeux de test arête par arête ; la configuration indiquée par les auteurs est le prochain run. Une étude de cas d'une seule intrusion, présentée avec ses limites.",
           stats: [
-            { label: "Meilleur ROC-AUC", value: "0,942 → 0% détecté" },
-            { label: "Seul modèle qui détecte quelque chose", value: "ROC-AUC 0,547" },
-            { label: "Campagnes red-team réelles", value: "39 (+ 52 sur fenêtre élargie)" }
+            { label: "Campagnes détectées dans 10 alertes/jour", value: "0 / 162" },
+            { label: "Meilleur détecteur dans 500 événements/jour", value: "7 / 162" },
+            { label: "Utilisateurs-jours à 500/jour : comptage d'activité vs meilleur détecteur", value: "56,8 % vs 51,2 %" }
           ],
           links: [
-            { label: "Preprint (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
-            { label: "Lire le papier (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Lire la version 2 (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Version 1 (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
+            { label: "Code v2.1.0 (DOI)", href: "https://doi.org/10.5281/zenodo.23623196" },
             { label: "Code et résultats complets", href: "https://github.com/SaniAdamou14/AuthBench" }
           ]
         }

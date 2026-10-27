@@ -201,7 +201,7 @@ const CONTENT = {
         {
           title: "AuthBench: Temporally Leak-Free, Alert-Budget Evaluation of Authentication Anomaly Detectors",
           subtitle: "With a LANL Case Study",
-          status: "Preprint, version 2 (October 2026) - version 1 and the code archived on Zenodo (DOI)",
+          status: "Preprint, version 2 (October 2026) - both versions and the code archived on Zenodo (DOI)",
           desc: "Security operations centres investigate a bounded number of alerts per day, yet anomaly detectors for authentication logs are mostly compared by threshold-free metrics. Under a protocol that reads no label, no detector places an event of any of the 162 red-team campaigns within 10 alerts per day, and the best detects 7 within 500. Ranked by user-day, the graph detector Euler reaches 51.2% of the campaigns at 500 per day - but simply counting how many computers each user touched that day, with no detector at all, reaches 56.8%: the coarser unit measures the fan-out of the compromised accounts. ROC-AUC and AUC-PR do not order the detectors by their campaign budgets; a campaign-weighted average precision does. The report also reruns the Euler authors' own code, which stays close to its published AUC but below half its published average precision with its default configuration, and reconciles both test sets edge by edge; the configuration its authors indicate is the next run. A case study of one intrusion, reported with its limits.",
           stats: [
             { label: "Campaigns detected within 10 alerts/day", value: "0 / 162" },
@@ -210,6 +210,7 @@ const CONTENT = {
           ],
           links: [
             { label: "Read version 2 (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Version 2 (DOI)", href: "https://doi.org/10.5281/zenodo.23687498" },
             { label: "Version 1 (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
             { label: "Code v2.1.0 (DOI)", href: "https://doi.org/10.5281/zenodo.23623196" },
             { label: "Code & full results", href: "https://github.com/SaniAdamou14/AuthBench" }
@@ -501,7 +502,7 @@ const CONTENT = {
         {
           title: "AuthBench: Temporally Leak-Free, Alert-Budget Evaluation of Authentication Anomaly Detectors",
           subtitle: "Avec une étude de cas sur LANL",
-          status: "Preprint, version 2 (octobre 2026) - la version 1 et le code sont archivés sur Zenodo (DOI)",
+          status: "Preprint, version 2 (octobre 2026) - les deux versions et le code sont archivés sur Zenodo (DOI)",
           desc: "Les centres opérationnels de sécurité (SOC) n'examinent qu'un nombre limité d'alertes par jour, alors que les détecteurs d'anomalies d'authentification sont surtout comparés par des métriques sans seuil. Avec un protocole qui ne lit aucune étiquette, aucun détecteur ne place un événement de l'une des 162 campagnes red-team dans les 10 premières alertes d'une journée, et le meilleur en détecte 7 dans les 500. Classé par utilisateur-jour, le détecteur sur graphe Euler atteint 51,2 % des campagnes à 500 par jour - mais compter simplement le nombre de machines touchées par chaque utilisateur ce jour-là, sans aucun détecteur, atteint 56,8 % : l'unité plus grossière mesure l'étendue de l'activité des comptes compromis. Le ROC-AUC et l'AUC-PR ne classent pas les détecteurs selon leurs budgets de détection ; une précision moyenne pondérée par campagne, si. Le rapport relance aussi le code des auteurs d'Euler, qui reste proche de son AUC publiée mais sous la moitié de sa précision moyenne publiée avec sa configuration par défaut, et réconcilie les deux jeux de test arête par arête ; la configuration indiquée par les auteurs est le prochain run. Une étude de cas d'une seule intrusion, présentée avec ses limites.",
           stats: [
             { label: "Campagnes détectées dans 10 alertes/jour", value: "0 / 162" },
@@ -510,6 +511,7 @@ const CONTENT = {
           ],
           links: [
             { label: "Lire la version 2 (PDF)", href: "assets/authbench-paper.pdf" },
+            { label: "Version 2 (DOI)", href: "https://doi.org/10.5281/zenodo.23687498" },
             { label: "Version 1 (DOI)", href: "https://doi.org/10.5281/zenodo.23159768" },
             { label: "Code v2.1.0 (DOI)", href: "https://doi.org/10.5281/zenodo.23623196" },
             { label: "Code et résultats complets", href: "https://github.com/SaniAdamou14/AuthBench" }

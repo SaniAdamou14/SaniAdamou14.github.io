@@ -3,7 +3,7 @@ const CONTENT = {
   en: {
     meta: {
       title: "Mahamane Sani Adamou Mahamane - Software Developer & CS Candidate",
-      description: "Full-stack developer and Computer Science candidate (3.97/4.00 GPA) specializing in secure software, AI/ML and identity & access management. Seeking a funded 2027 master's degree."
+      description: "Full-stack developer and Computer Science candidate (3.97/4.00 GPA) specializing in secure software, AI/ML and identity & access management. Seeking a funded master's or PhD starting in 2027."
     },
     nav: { about: "About", experience: "Experience", education: "Education", skills: "Skills", projects: "Projects", research: "Research", certifications: "Certifications", contact: "Contact" },
     hero: {
@@ -22,7 +22,7 @@ const CONTENT = {
       paragraphs: [
         "Computer Science candidate with a 3.97/4.00 GPA and two years of continuous full-stack development experience. Progressed from Full-Stack Developer Intern at Gabera Foundation to Junior Full-Stack Software Developer at Gabera Software Solutions SARL.",
         "Combines production software engineering, cybersecurity training, identity and access management experience, and applied projects in retrieval-augmented generation, reinforcement learning and machine learning.",
-        "Currently seeking a fully or substantially funded, research-oriented master's degree beginning in 2027 - in cybersecurity, artificial intelligence, software engineering, data science, or distributed/cloud systems."
+        "Currently seeking a fully or substantially funded, research-oriented master's or PhD program beginning in 2027 - in cybersecurity, artificial intelligence, software engineering, data science, or distributed/cloud systems."
       ],
       facts: [
         { label: "Nationality", value: "Nigerien" },
@@ -290,7 +290,7 @@ const CONTENT = {
     contact: {
       heading: "Get in Touch",
       kicker: "Contact",
-      text: "Open to fully or substantially funded master's programs for 2027, and to software development / cybersecurity / AI opportunities. Reach out - I reply promptly.",
+      text: "Open to fully or substantially funded master's and PhD programs for 2027, and to software development / cybersecurity / AI opportunities. Reach out - I reply promptly.",
       emailCta: "Send an email",
       links: "Find me elsewhere"
     },
@@ -304,7 +304,7 @@ const CONTENT = {
   fr: {
     meta: {
       title: "Mahamane Sani Adamou Mahamane - Développeur Full-Stack & Candidat CS",
-      description: "Développeur full-stack et candidat en informatique (GPA 3.97/4.00), spécialisé en logiciels sécurisés, IA/ML et gestion des identités et accès. À la recherche d'un master financé pour 2027."
+      description: "Développeur full-stack et candidat en informatique (GPA 3.97/4.00), spécialisé en logiciels sécurisés, IA/ML et gestion des identités et accès. À la recherche d'un master ou d'un doctorat financé pour 2027."
     },
     nav: { about: "Profil", experience: "Expérience", education: "Formation", skills: "Compétences", projects: "Projets", research: "Recherche", certifications: "Certifications", contact: "Contact" },
     hero: {
@@ -323,7 +323,7 @@ const CONTENT = {
       paragraphs: [
         "Candidat en informatique avec un GPA de 3.97/4.00 et deux ans d'expérience continue en développement full-stack. Passé de stagiaire développeur full-stack chez Gabera Foundation à développeur full-stack junior chez Gabera Software Solutions SARL.",
         "Combine ingénierie logicielle en production, formation en cybersécurité, expérience en gestion des identités et des accès, et projets appliqués en génération augmentée par récupération (RAG), apprentissage par renforcement et machine learning.",
-        "Recherche actuellement un master à orientation recherche, entièrement ou substantiellement financé, débutant en 2027 - en cybersécurité, intelligence artificielle, génie logiciel, science des données ou systèmes distribués/cloud."
+        "Recherche actuellement un master ou un doctorat à orientation recherche, entièrement ou substantiellement financé, débutant en 2027 - en cybersécurité, intelligence artificielle, génie logiciel, science des données ou systèmes distribués/cloud."
       ],
       facts: [
         { label: "Nationalité", value: "Nigérienne" },
@@ -591,7 +591,7 @@ const CONTENT = {
     contact: {
       heading: "Me contacter",
       kicker: "Contact",
-      text: "Ouvert aux masters entièrement ou substantiellement financés pour 2027, ainsi qu'aux opportunités en développement logiciel, cybersécurité et IA. N'hésitez pas à me contacter - je réponds rapidement.",
+      text: "Ouvert aux masters et doctorats entièrement ou substantiellement financés pour 2027, ainsi qu'aux opportunités en développement logiciel, cybersécurité et IA. N'hésitez pas à me contacter - je réponds rapidement.",
       emailCta: "Envoyer un email",
       links: "Me retrouver ailleurs"
     },
